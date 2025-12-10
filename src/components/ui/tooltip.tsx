@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
 import { Tooltip as BaseTooltip } from "@base-ui-components/react";
+import { cn } from "@/lib/utils";
 
 const ArrowSvg = (props: React.ComponentProps<"svg">) => (
   <svg width="20" height="10" viewBox="0 0 20 10" fill="none" {...props}>

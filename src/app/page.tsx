@@ -1,5 +1,6 @@
-import { Tooltip } from "@/components/ui/tooltip";
 import Link from "next/link";
+import { Tooltip } from "@/components/ui/tooltip";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default () => {
   return (
@@ -22,6 +23,7 @@ export default () => {
           </Tooltip.Portal>
         </Tooltip.Root>
       </Tooltip.Provider>
+      <Skeleton className="size-20" />
     </div>
   );
 };
