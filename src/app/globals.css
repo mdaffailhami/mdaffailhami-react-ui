@@ -71,7 +71,7 @@
   }
 
   body {
-    @apply bg-neutral-1 text-on-neutral-1 border-neutral-4 font-sans antialiased;
+    @apply antialiased font-sans bg-neutral-1 text-on-neutral-1;
   }
 
   ::selection {
