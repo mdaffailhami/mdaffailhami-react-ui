@@ -2,6 +2,9 @@ import Link from "next/link";
 import { Tooltip } from "@/components/ui/tooltip";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
+import { IconButton } from "@/components/ui/icon-button";
+import { HomeIcon } from "lucide-react";
 
 export default () => {
   return (
@@ -25,7 +28,12 @@ export default () => {
         </Tooltip.Root>
       </Tooltip.Provider>
       <Skeleton className="size-20" />
-      <Input placeholder="Enter text here.." className={"text-primary"} />
+      <Input id="input-text" placeholder="Enter text here.." />
+      <Checkbox id="input-is-married" />
+      <div className="flex gap-2">
+        <IconButton variant="filled" icon={HomeIcon} />
+        <IconButton variant="ghost" icon={HomeIcon} />
+      </div>
     </div>
   );
 };

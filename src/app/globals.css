@@ -9,8 +9,8 @@
 @theme inline {
   /* Fonts */
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-arvo);
-  --font-mono: var(--font-jetbrains-mono);
+  /* --font-serif: var(--font-arvo);
+  --font-mono: var(--font-jetbrains-mono); */
 
   /* Brand colors */
   --color-primary: var(--primary);
@@ -71,7 +71,7 @@
   }
 
   body {
-    @apply antialiased font-sans bg-neutral-1 text-on-neutral-1;
+    @apply antialiased font-sans bg-neutral-1 text-on-neutral-1 transition-colors;
   }
 
   ::selection {
